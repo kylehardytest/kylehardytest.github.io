@@ -1,13 +1,3 @@
-feather.replace()
-
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-
 // Wait for jQuery
 $(document).ready(function(){
   // Smooth Anchor Schrolling
@@ -45,6 +35,7 @@ $(document).ready(function(){
         }
       }
     });
+    // Change Background Color On Scroll
     $(window).on("scroll touchmove", function() {
             if ($(document).scrollTop() >= $("#about").position().top) {
                     $('body').css('background', $("#about").attr("data-background-color"));
@@ -66,6 +57,26 @@ $(document).ready(function(){
                     $('body').css('background', $("#contact").attr("data-background-color"))
             };
     });
-    jackHarnerSig("light")
 });
 
+// Feather Icons Init
+feather.replace()
+
+// WOW.js Scroll Reveal Animations Init
+wow = new WOW({
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       false,       // default
+  live:         true        // default
+})
+wow.init();
+
+// Off Canvas Modal Form
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
