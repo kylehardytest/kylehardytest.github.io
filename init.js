@@ -50,14 +50,18 @@ $(document).ready(function(){
                     $('body').css('background', $("#about").attr("data-background-color"));
 
             };
-            if ($(document).scrollTop() > $("#services").position().top) {
+            if ($(document).scrollTop() >= $("#services").position().top) {
                     $('body').css('background', $("#services").attr("data-background-color"))
             };
-            if ($(document).scrollTop() > $("#tools").position().top) {
+            if ($(document).scrollTop() >= $("#tools").position().top) {
 
                     $('body').css('background', $("#tools").attr("data-background-color"))
             };
-            if ($(document).scrollTop() > $("#contact").position().top) {
+            if ($(document).scrollTop() >= $("#clients").position().top) {
+
+                    $('body').css('background', $("#clients").attr("data-background-color"))
+            };
+            if ($(document).scrollTop() >= $("#contact").position().top) {
 
                     $('body').css('background', $("#contact").attr("data-background-color"))
             };
