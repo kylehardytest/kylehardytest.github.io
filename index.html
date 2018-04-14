@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Kyle Hardy">
+  <meta name="description" content="Simple one-page business site for a professional firm like a lawyer or accountant.">
+
+  <title>The Business Firm</title>
+
+  <link rel="icon" href="css/img/icon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300,500,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header id="banner" class="bg-gradient banner-container u-center">
+    <h2>The Business Firm</h2>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">What I Do</a></li>
+      <li><a href="#tools">How I Do It</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="javascript:void(0)" onclick="openNav()">Send Your Brief</a></li>
+    </ul>
+    <a href="mailto:" class="e-mail">email@business.com</a>
+  </header>
+
+  <section id="content" class="content-container">
+    <article id="about" class="bg-solid article-container u-center" data-background-color="#e7f0fd">
+      <h2>A tagline for the company</h2>
+      <p>Some words explaining who you are, what you do, where you operate, and why you're qualified to do what you are doing. Probably make it longer than this.</p>
+      <a href="#services"><i data-feather="chevron-down"></i></a>
+    </article>
+
+    <article id="services" class="bg-alt article-container u-center" data-background-color="#accbee">
+      <h2 class="u-uppercase">What I Do</h2>
+      <ul class="">
+        <li>A Sentence describing a service.</li>
+        <li>Maybe another service.</li>
+        <li>Yet another service.</li>
+        <li>More stuff you do.</li>
+        <li>Atleast this many things.</li>
+        <li>Probably actually one more.</li>
+      </ul>
+      <a href="#tools"><i data-feather="chevron-down"></i></a>
+    </article>
+
+    <article id="tools" class="bg-solid article-container u-center" data-background-color="#e7f0fd">
+      <h2 class="u-uppercase">How I Do It</h2>
+      <i data-feather="book-open"></i>
+      <p>Audit your messy books</p>
+      <i data-feather="pie-chart"></i>
+      <p>Establish detailed reports</p>
+      <i data-feather="trending-up"></i>
+      <p>Establish plans for the future</p>
+      <i data-feather="percent"></i>
+      <p>Watch your business grow</p>
+      <a href="#contact"><i data-feather="chevron-down"></i></a>
+    </article>
+
+    <footer id="contact" class="bg-alt article-container u-center" data-background-color="#accbee">
+      <h2 class="u-uppercase">Contact</h2>
+      <a href="#about"><i data-feather="life-buoy"></i></a>
+      <ul class="">
+        <li>555-555-5555</li>
+        <li>mail@business.com</li>
+      </ul>
+      <a href="javascript:void(0)" class="button" onclick="openNav()">More Details</a>
+    </footer>
+  </section>
+
+  <section id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i data-feather="x"></i></a>
+    <article class="article-container u-center">
+      <i data-feather="life-buoy"></i>
+      <h2>Contact Form</h2>
+      <p>Fill out the form below and I'll get right back to you.</p>
+      <form>
+        <fieldset>
+          <label for="nameField">Name</label>
+          <input type="text" placeholder="Your name" id="nameField">
+          <label for="nameField">Phone #</label>
+          <input type="text" placeholder="Your phone number" id="phoneField">
+          <label for="nameField">E-Mail</label>
+          <input type="text" placeholder="Your e-mail address" id="emailField">
+          <label for="commentField">How can I help you?</label>
+          <textarea placeholder="Tell me as much as you can about your company and what you need help with..." id="commentField"></textarea>
+          <input class="button-primary" type="submit" value="Send">
+        </fieldset>
+      </form>
+    </article>
+  </section> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.0/feather.min.js"></script>
+  <script src="init.js"></script>
+
+</body>
+</html>
